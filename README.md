@@ -2,7 +2,7 @@
 
 All runs: 1,000,000 iterations, two `steady_clock::now()` calls per iteration.
 
-| Build | Run | Total (ms) | Smallest non-zero (ns) | Average (ns) | Largest (ns) |
+| Build | Run | Total (ms) | Smallest non-zero difference (ns) | Average difference (ns) | Largest difference (ns) |
 |---|---|---|---|---|---|
 | VS Debug | 1 | 206.0 | 100 | 46 | 34,900 |
 | VS Debug | 2 | 194.4 | 100 | 31 | 45,400 |
