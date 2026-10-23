@@ -6,8 +6,9 @@ the build, and the largest single difference in a million readings ranged from
 10,000 to 177,500 ns.
 
 ## What this measures
-All runs: 1,000,000 iterations, two `steady_clock::now()` calls per iteration.
-The difference we are measuring is the period of time between the two consecutive ticks measured in nanoseconds. 
+1,000,000 iterations, two `steady_clock::now()` calls per iteration. A *difference* is the
+time between two consecutive readings of the clock, in nanoseconds.
+Source: [Probe the clock.cpp](Probe%20the%20clock/Probe%20the%20clock.cpp)
 
 ## Results
 | Build | Run | Total (ms) | Smallest non-zero difference (ns) | Mean difference (ns) | Largest difference (ns) |
@@ -31,22 +32,26 @@ The difference we are measuring is the period of time between the two consecutiv
 
 ## Predictions vs results
 | Prediction | Result |
-| 100ns | 100ns |
-| [smallest non-zero difference] | 100ns |
-| [Release mean vs Debug mean] | ~22 vs ~42 |
+|---|---|
+| Smallest non-zero difference: 100 ns | 100 ns in all 15 runs |
+| Release total time lower than Debug | Yes: 58.5–60.7 ms vs 194–207 ms |
+| Release mean difference higher than Debug | No: 22–24 ns vs 31–46 ns |
 
 ## Findings
 1. **The smallest non-zero difference is 100 ns in every run.**
-   Observation: In all 15 runs (5 per build, 3 builds) the smallest non-zero difference
+   - **Observation:**  In all 15 runs (5 per build, 3 builds) the smallest non-zero difference
 was exactly 100 ns. The largest difference in each run was always a multiple of 100 ns.
 An earlier version of the program that counted zero differences reported a smallest
 difference of 0 ns. 
-   Explanation: The clock's counter moves in steps of 100 ns. Two readings taken inside the same
-step give a difference of 0. A pair that crosses a single or multiple step boundaries gives a 100 or more.
+   - **Explanation:** The clock's counter moves in steps of 100 ns. Two readings taken inside the same
+step give a difference of 0. One-boundary pairs give 100 ns, pairs that cross
+     several give 200 ns, 300 ns and so on.
 So the smallest non-zero difference the program can ever report is 100, even though
 the real time between the two calls is only about 22-46 ns which is an estimate from the mean difference.
-   Test: tested for the Windows performance counter (QueryPerformanceFrequency = 10,000,000 ticks/s = 100 ns per tick).
-      [qpf_test.cpp](qpf_test/qpf_test.cpp)
+- **Status:** tested for the Windows performance counter (`QueryPerformanceFrequency`
+     = 10,000,000 ticks/s = 100 ns per tick). That `steady_clock` reads this counter in
+     both libraries is likely, but I did not check it.
+- **Test:** [qpf_test.cpp](qpf_test/qpf_test.cpp)
                      
 
 
