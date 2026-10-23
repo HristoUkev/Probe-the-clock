@@ -4,12 +4,13 @@
 
 int main()
 {
-	LARGE_INTEGER frequency;
+    LARGE_INTEGER frequency;
+    QueryPerformanceFrequency(&frequency);
 
-	// Get the frequency of the high-resolution performance counter
-	QueryPerformanceFrequency(&frequency);
-	
-	std::int64_t ns_pt = frequency.QuadPart / 1000000000.0;
-	std::cout << "Elapsed time: " << frequency.QuadPart << " nanoseconds" << std::endl;
-	return 0;
+    const double ticks_per_second = static_cast<double>(frequency.QuadPart);
+    const double ns_per_tick = 1000000000.0 / ticks_per_second;
+
+    std::cout << "Ticks per second: " << frequency.QuadPart << '\n';
+    std::cout << "Nanoseconds per tick: " << ns_per_tick << '\n';
+    return 0;
 }
