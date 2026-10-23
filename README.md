@@ -46,8 +46,8 @@ step give a difference of 0. A pair that crosses a single or multiple step bound
 So the smallest non-zero difference the program can ever report is 100, even though
 the real time between the two calls is only about 22-46 ns which is an estimate from the mean difference.
    Test: tested for the Windows performance counter (QueryPerformanceFrequency = 10,000,000 ticks/s = 100 ns per tick).
-      
-
+      [qpf_test.cpp](qpf_test/qpf_test.cpp)
+                     
 
 
 
