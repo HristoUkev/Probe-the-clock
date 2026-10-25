@@ -28,7 +28,7 @@ int main()
 
 		avg_ns = (avg_ns + d_ns);
 		//if the current gap is smaller than the previous smallest gap and not a zero, update the smallest gap 
-		if (((d_ns < min_ns)  != 0) && d_ns != std::chrono::duration<std::int64_t, std::nano>(0))
+		if ((d_ns < min_ns) && d_ns != std::chrono::duration<std::int64_t, std::nano>(0))
 		{
 		
 						min_ns = d_ns;
