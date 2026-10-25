@@ -1,0 +1,6 @@
+﻿  qpf_test.cpp
+C:\CppProj\qpf_test\qpf_test\qpf_test.cpp(14,21): warning C4244: 'initializing': conversion from 'double' to 'int64_t', possible loss of data
+C:\CppProj\qpf_test\qpf_test\qpf_test.cpp(8,20): warning C4101: 't2': unreferenced local variable
+C:\CppProj\qpf_test\qpf_test\qpf_test.cpp(8,16): warning C4101: 't1': unreferenced local variable
+C:\CppProj\qpf_test\qpf_test\qpf_test.cpp(9,9): warning C4101: 'elapsedTime': unreferenced local variable
+  qpf_test.vcxproj -> C:\CppProj\qpf_test\x64\Debug\qpf_test.exe
