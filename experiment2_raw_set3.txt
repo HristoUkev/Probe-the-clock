@@ -1,0 +1,180 @@
+﻿=== round 1, baseline ===
+condition: baseline
+Time taken for 1000000 iterations: 55514000 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 563700ns
+Number of gaps over 1us: 37
+Number of gaps over 10us: 5
+=== round 1, pin ===
+condition: pin
+pinned to processor 4
+Time taken for 1000000 iterations: 55188200 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 114000ns
+Number of gaps over 1us: 29
+Number of gaps over 10us: 5
+=== round 1, priority ===
+condition: priority
+priority class: 128
+Time taken for 1000000 iterations: 54511800 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 4300ns
+Number of gaps over 1us: 26
+Number of gaps over 10us: 0
+=== round 1, both ===
+condition: both
+pinned to processor 4
+priority class: 128
+Time taken for 1000000 iterations: 54652300 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 13100ns
+Number of gaps over 1us: 28
+Number of gaps over 10us: 1
+=== round 2, baseline ===
+condition: baseline
+Time taken for 1000000 iterations: 54664200 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 13200ns
+Number of gaps over 1us: 28
+Number of gaps over 10us: 1
+=== round 2, pin ===
+condition: pin
+pinned to processor 4
+Time taken for 1000000 iterations: 54703900 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 12200ns
+Number of gaps over 1us: 17
+Number of gaps over 10us: 1
+=== round 2, priority ===
+condition: priority
+priority class: 128
+Time taken for 1000000 iterations: 54461800 ns
+Smallest gap measured: 100ns
+Average gap measured: 16ns
+Largest gap measured: 3700ns
+Number of gaps over 1us: 29
+Number of gaps over 10us: 0
+=== round 2, both ===
+condition: both
+pinned to processor 4
+priority class: 128
+Time taken for 1000000 iterations: 54592000 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 26800ns
+Number of gaps over 1us: 26
+Number of gaps over 10us: 1
+=== round 3, baseline ===
+condition: baseline
+Time taken for 1000000 iterations: 54496300 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 6400ns
+Number of gaps over 1us: 23
+Number of gaps over 10us: 0
+=== round 3, pin ===
+condition: pin
+pinned to processor 4
+Time taken for 1000000 iterations: 54628100 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 2900ns
+Number of gaps over 1us: 26
+Number of gaps over 10us: 0
+=== round 3, priority ===
+condition: priority
+priority class: 128
+Time taken for 1000000 iterations: 54477800 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 11700ns
+Number of gaps over 1us: 29
+Number of gaps over 10us: 1
+=== round 3, both ===
+condition: both
+pinned to processor 4
+priority class: 128
+Time taken for 1000000 iterations: 54653400 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 10900ns
+Number of gaps over 1us: 34
+Number of gaps over 10us: 1
+=== round 4, baseline ===
+condition: baseline
+Time taken for 1000000 iterations: 54576300 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 33300ns
+Number of gaps over 1us: 34
+Number of gaps over 10us: 2
+=== round 4, pin ===
+condition: pin
+pinned to processor 4
+Time taken for 1000000 iterations: 54753700 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 84900ns
+Number of gaps over 1us: 36
+Number of gaps over 10us: 2
+=== round 4, priority ===
+condition: priority
+priority class: 128
+Time taken for 1000000 iterations: 54474800 ns
+Smallest gap measured: 100ns
+Average gap measured: 16ns
+Largest gap measured: 20400ns
+Number of gaps over 1us: 39
+Number of gaps over 10us: 1
+=== round 4, both ===
+condition: both
+pinned to processor 4
+priority class: 128
+Time taken for 1000000 iterations: 54897100 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 3300ns
+Number of gaps over 1us: 30
+Number of gaps over 10us: 0
+=== round 5, baseline ===
+condition: baseline
+Time taken for 1000000 iterations: 54705600 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 14200ns
+Number of gaps over 1us: 34
+Number of gaps over 10us: 2
+=== round 5, pin ===
+condition: pin
+pinned to processor 4
+Time taken for 1000000 iterations: 54667500 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 13000ns
+Number of gaps over 1us: 27
+Number of gaps over 10us: 1
+=== round 5, priority ===
+condition: priority
+priority class: 128
+Time taken for 1000000 iterations: 54534800 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 22000ns
+Number of gaps over 1us: 32
+Number of gaps over 10us: 3
+=== round 5, both ===
+condition: both
+pinned to processor 4
+priority class: 128
+Time taken for 1000000 iterations: 54645600 ns
+Smallest gap measured: 100ns
+Average gap measured: 17ns
+Largest gap measured: 12000ns
+Number of gaps over 1us: 30
+Number of gaps over 10us: 1
